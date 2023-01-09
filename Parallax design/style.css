@@ -1,0 +1,729 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li {
+  list-style: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+li:hover {
+  text-decoration: none;
+  color: rebeccapurple;
+  background: rgba(235, 229, 229, 0.2);
+  font-weight: 500;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: azure;
+  padding: 0.5rem;
+}
+.page-wrapper {
+  height: 370vh;
+  width: 100%;
+  overscroll-behavior: none;
+  display: flex;
+}
+.page1 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.bgd1 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.img1 {
+  background: linear-gradient(0deg, rgba(90, 67, 233, 1) 8%, rgb(8, 1, 32) 85%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.bgd2 {
+  width: 100%;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.starFrame {
+  width: 3000px;
+  height: 100vh;
+  left: -50vw;
+  display: block;
+  position: absolute;
+}
+.img2 {
+  background: url(assets/starsBig.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -300px;
+  height: 100%;
+  width: 1500px;
+  position: absolute;
+}
+.bgd3 {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top: 0;
+  left: -15vw;
+  transform: scale(0.5);
+}
+.img3 {
+  background: url(Assets/moonglow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  position: absolute;
+}
+.bgd5 {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 18vh;
+}
+.img5 {
+  background: url(assets/bgd1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.bgd6 {
+  width: 170px;
+  height: 60vh;
+  position: absolute;
+  top: 35vh;
+  right: 0;
+}
+.img6 {
+  background: url(assets/guyOnRock.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.bgd7 {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  top: 70vh;
+}
+.img7 {
+  background: url(assets/forest11.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.bgd8 {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  top: 70vh;
+}
+.img8 {
+  background: url(assets/trees1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.page2 {
+  top: 100vh;
+  width: 100%;
+  height: 250vh;
+  position: absolute;
+  background: #1b0227;
+  background-attachment: fixed;
+}
+.landing {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-items: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.textP2 {
+  position: absolute;
+  top: 3%;
+  width: 80%;
+  font-size: 1.5rem;
+  color: azure;
+  text-align: center;
+}
+.ribbons {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: repeat(3, 40px);
+  position: absolute;
+  top: 520px;
+}
+.ribbon {
+  background: white;
+  color: goldenrod;
+  font-weight: 600;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%, 10% 50%);
+  cursor: pointer;
+}
+.ribbon:hover {
+  background: goldenrod;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 00%, 100% 100%, 0% 100%, 0% 100%);
+  transition: all 1s;
+  color: azure;
+}
+.imgP2Content {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: repeat(4, 300px);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  position: relative;
+  top: 650px;
+}
+.imgP2 {
+  width: 100%;
+  height: 100%;
+}
+.photo1 {
+  background: url(assets/img11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+.photo2 {
+  background: url(assets/img2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+.photo3 {
+  background: url(assets/img3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+.photo4 {
+  background: url(assets/img4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+.page3 {
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  background: #1b0227;
+  top: 330vh;
+}
+h2 {
+  color: goldenrod;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: -30px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 250px;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  padding: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.logo1 {
+  background: url(assets/logo1.1.png);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.logo2 {
+  background: url(assets/logo2.1.png);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+h6 {
+  color: goldenrod;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  text-align: center;
+}
+@media only screen and (min-width: 451px) and (max-width: 830px) {
+  body {
+    width: 100%;
+  }
+  li {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+  }
+  .page-wrapper {
+    width: 100%;
+    height: 200vh;
+  }
+  .bgd3 {
+    transform: scale(0.7);
+    left: 5%;
+  }
+  .bgd6 {
+    top: 45vh;
+  }
+  .bgd7 {
+    top: 80vh;
+  }
+  .bgd8 {
+    top: 80vh;
+  }
+  .page2 {
+    top: 107vh;
+    height: 180vh;
+  }
+  .textP2 {
+    top: 6%;
+    font-size: 1.4rem;
+  }
+  .ribbons {
+    display: grid;
+    grid-template-columns: repeat(3, clamp(100px, 150px, 200px));
+    grid-template-rows: 50px;
+    grid-column-gap: 15px;
+    position: absolute;
+    top: 350px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+  .first {
+    width: clamp(100px, 150px, 200px);
+    padding: 5px;
+  }
+  .second {
+    width: clamp(100px, 150px, 200px);
+    padding: 5px;
+  }
+  .third {
+    width: clamp(100px, 150px, 200px);
+    padding: 5px;
+  }
+  .imgP2Content {
+    top: 450px;
+    grid-template-columns: repeat(2, clamp(200px, 250px, 300px));
+    grid-template-rows: repeat(2, 300px);
+    grid-column-gap: 20px;
+  }
+  .page3 {
+    top: 245vh;
+  }
+  .logo {
+    width: 80%;
+    height: 200px;
+    margin: 20px;
+  }
+  .logo1,
+  .logo2 {
+    height: 200px;
+    width: 200px;
+    scale: 1.5;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 831px) and (max-width: 1400px) {
+  nav {
+    padding: 1.875rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    margin-left: 6rem;
+    font-size: 2rem;
+  }
+  .page-wrapper {
+    width: 100%;
+    height: 220vh;
+  }
+  .starFrame {
+    height: 100vh;
+    left: -30vw;
+  }
+  .img2 {
+    width: 2500px;
+  }
+  .bgd3 {
+    transform: scale(0.8);
+    left: 0;
+  }
+  .bgd5 {
+    top: 2vh;
+    height: 140vh;
+  }
+  .bgd6 {
+    width: 200px;
+    top: 45vh;
+  }
+  .bgd7 {
+    height: 100vh;
+    top: 90vh;
+  }
+  .bgd8 {
+    height: 100vh;
+    top: 90vh;
+  }
+  .page2 {
+    top: 140vh;
+    height: 185vh;
+  }
+  .textP2 {
+    height: 350px;
+    font-size: clamp(1rem,2rem,2rem);
+    top: 6vh;
+  }
+  .ribbons {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 100px;
+    grid-column-gap: 20px;
+    position: absolute;
+    top: 400px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-items: center;
+  }
+  .first {
+    width: 80%;
+  }
+  .second {
+    width: 200px;
+  }
+  .third {
+    width: 200px;
+  }
+  .imgP2Content {
+    top: 550px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, 450px);
+    grid-column-gap: 20px;
+  }
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4 {
+    width: clamp(350px,400px, 450px);
+  }
+  .page3 {
+    top: 325vh;
+  }
+  h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .logo {
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+  }
+  .logo1,
+  .logo2 {
+    height: 200px;
+    width: 200px;
+    scale: 1.5;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width:1000px) and (max-width:1400px) {
+  .first,
+  .second,
+  .third {
+    font-size: 1.5rem;
+    padding: 5px;
+    height: 40px;
+    width: 80%;
+}
+.ribbons { 
+  top: 315px;
+}
+.imgP2Content {
+  top: 450px;
+}
+}
+@media only screen and (min-width: 1401px) and (max-width: 1920px) {
+  nav {
+    padding: 1.875rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    margin-left: 6rem;
+    font-size: 2rem;
+  }
+  .page-wrapper {
+    width: 100%;
+    height: 220vh;
+  }
+  .bgd1 {
+    height: 150vh;
+  }
+  .starFrame {
+    height: 180vh;
+    left: -30vw;
+  }
+  .bgd2 {
+    height: 180vh;
+  }
+  .img2 {
+    height: 140vh;
+    width: 2500px;
+  }
+  .bgd3 {
+    transform: scale(0.8);
+    left: 0;
+  }
+  .bgd5 {
+    top: 2vh;
+    height: 140vh;
+  }
+  .bgd6 {
+    width: 200px;
+    top: 45vh;
+  }
+  .bgd7 {
+    height: 100vh;
+    top: 90vh;
+  }
+  .bgd8 {
+    height: 100vh;
+    top: 90vh;
+  }
+  .page2 {
+    top: 140vh;
+    height: 186vh;
+  }
+  .textP2 {
+    font-size: 2rem;
+    top: 6vh;
+  }
+  .ribbons {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: 100px;
+    grid-column-gap: 100px;
+    position: absolute;
+    top: 320px;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+  .first,
+  .second,
+  .third {
+    font-size: 1.5rem;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+  }
+
+  .imgP2Content {
+    top: 450px;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(2, 500px);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4 {
+    border-radius: 15px;
+  }
+  .page3 {
+    top: 300vh;
+  }
+  h2 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .logo {
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+  }
+  .logo1,
+  .logo2 {
+    height: 200px;
+    width: 200px;
+    scale: 1.5;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1921px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    margin-left: 10rem;
+    font-size: 2.5rem;
+  }
+  .starFrame {
+    height: 160vh;
+    left: -30vw;
+    top: -60px;
+  }
+  .bgd1 {
+    height: 150vh;
+  }
+  .bgd2 {
+    height: 180vh;
+  }
+  .img2 {
+    background-position: -200px;
+    width: 3500px;
+    top: -60px;
+  }
+  .bgd3 {
+    transform: scale(0.78);
+    left: 120px;
+    top: 50px;
+  }
+  .bgd5 {
+    top: 0vh;
+    height: 200vh;
+    width: 100%;
+  }
+  .img5 {
+    background: url(assets/bgd2.png);
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+  }
+  .bgd6 {
+    width: 280px;
+    top: 50vh;
+  }
+  .bgd7 {
+    height: 110vh;
+    top: 100vh;
+  }
+  .bgd8 {
+    height: 110vh;
+    top: 100vh;
+  }
+  .page2 {
+    top: 155vh;
+    height: 200vh;
+  }
+  .textP2 {
+    font-size: 3rem;
+    width: 80%;
+    height: 500px;
+    top: 6vh;
+  }
+  .ribbons {
+    display: grid;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: 100px;
+    grid-column-gap: 100px;
+    position: relative;
+    top: 500px;
+    font-size: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+  .first,
+  .second,
+  .third {
+    padding: 5px;
+    width: 100%;
+    height: 70px;
+  }
+  .imgP2Content {
+    top: 550px;
+    grid-template-columns: repeat(2, 800px);
+    grid-template-rows: repeat(2, 600px);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+  }
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4 {
+    border-radius: 20px;
+  }
+  .page3 {
+    top: 300vh;
+    height: 50vh;
+  }
+  h2 {
+    font-size: 3.5rem;
+    width: 100%;
+  }
+  .logo {
+    top: 50px;
+    width: 600px;
+    height: 200px;
+    margin: 20px;
+  }
+  .logo1,
+  .logo2 {
+    height: 200px;
+    width: 200px;
+    scale: 1.5;
+  }
+  h6 {
+    font-size: 2rem;
+  }
+}
